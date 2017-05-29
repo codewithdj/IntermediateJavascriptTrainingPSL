@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <h2>Temperature Converter</h2>
+        <button type="btn" onclick="convertIntoCelsius()" >Convert Into C</button>
+        <button type="btn" onclick="convertIntoFahrenheit()" >Convert Into F</button>
+
+        <script>
+          
+            // Formula: c/5 = (f-32)/9
+
+            function convertIntoFahrenheit(){
+                  var val = prompt("Enter Value to convert into Celsius");
+                alert((val/5)*9+32) ;
+            }
+
+            function convertIntoCelsius(){
+                  var val = prompt("Enter Value to convert into Celsius");
+                alert(((val-32)/9)*5);
+            }
+
+
+        </script>
+    </body>
+</html>

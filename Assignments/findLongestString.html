@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Longest String</title>
+    </head>
+    <body>
+        <h1>Find Longest String</h1>
+        <script>
+            
+            var val = prompt("Enter a String");
+            vArr =val.split(" ");
+            longest= vArr[0];
+            for(var i=1;i<vArr.length;i++){
+                if(vArr[i].length > vArr[i-1].length){
+                    longest = vArr[i];
+                }
+            }
+            document.write("<h2> Longest Word in :</h2><h3> "+val +" string is "+longest+"</h3>");
+        </script>
+    </body>
+</html>
