@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo 1</title>
+
+        <script>
+          /*  function foo(){
+                var para1 = document.getElementById('para1');
+               // para1.innerHtml ="<h1>Modified Text</h1>";
+                para1.innerText = "Modified Text";
+                
+            }
+            window.onload = foo;
+            */
+
+            function bar() {
+                alert('document.onreadystatechange'+ this.reaState.toString();)
+
+
+            }
+            document.onreadystatechange= bar;
+        </script>
+
+    </head>
+    <body>
+        <noscript>Please Turn On Javascript! </noscript>
+        <h1>Hello World</h1>
+
+        <p id="para1">Paragraph 1</p>
+    
+        
+    
+    </body>
+</html>

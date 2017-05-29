@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+       <script>
+            // Functions:-
+            // 1. Function Declaration
+            // 2. Function Expression
+
+            /*function add(){
+                x=2, y=3;
+                console.log(x+y);
+
+
+            }
+
+            add();*/
+
+            var a= 1;
+            function foo(){
+
+                var b = 8;
+                var c = 15;
+
+                alert("a is "+a+ ",b is "+b+ ", x is "+x);
+                var x = 3;
+
+                {
+                    p = 87;
+                    alert(p);
+                }
+                // In Javascript variables have function level scope not a block level
+                //hoisting
+                
+                alert(p);
+
+            }
+     //       alert("p is "+p +"before calling foo");
+            foo();
+            alert("p is "+p +"After calling foo");
+
+            // Function Expression 
+
+            var x = function(){
+                console.log("Inside Function Expression!");
+                document.write("<h3>Inside Function Expression</h3>");
+            }
+
+            x();
+
+
+            // Anonymous Functions- it calls once
+            // - callback methods
+            // - Self Executing function/ IIFE (Immediately Invoked Function Expression )  
+
+            function invoke_and_add(fun1,fun2){
+
+            }
+            // console.log(invoke_and_add(one,two));
+
+            console.log(invoke_and_add(
+                function() { return 1; }, // Passing address of the method
+                function() { return 2; }
+            )); //passing Anonymous method definitions
+
+            // Self Executing Function
+
+            (function(){
+                alert('Doing Initialization! - Once and Off! ');
+            })(); //IIFE- Immediately Invoked Function Expression
+
+            for(var i=0;i<5;i++){
+                    
+                (function(){
+                    alert('Doing Initialization! - Once and Off! '+i);
+                })(i); //IIFE- Immediately Invoked Function Expression
+
+            }
+
+       </script>
+    </body>
+</html>
